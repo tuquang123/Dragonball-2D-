@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &181166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493458}
+  - component: {fileID: 11405142}
+  - component: {fileID: 11400134}
+  - component: {fileID: 11483550}
+  - component: {fileID: 7692734163795400350}
+  - component: {fileID: 825782909}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.563, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11405142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d2700ef87d15b40b4daa0a75590fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  playGameMusic: 1
+  backgroundMusics:
+  - {fileID: 8300000, guid: 623333a9c7de780459cad42d24db6b88, type: 3}
+  - {fileID: 8300000, guid: f24f4eaa99043e742b34dcd484868297, type: 3}
+  - {fileID: 8300000, guid: 06b0b99aaa0e3dc498f998672a43b864, type: 3}
+  continueCoinCost: 50
+  FadeInEffect: {fileID: 195662, guid: 8934df31d3546f54cb754d5cbbeb5a51, type: 3}
+  FloatingText: {fileID: 166564, guid: 8db5fc80da1e288418f7c55aae2eea25, type: 3}
+  currentCheckpoint: {x: 0, y: 0}
+  isNoLives: 0
+--- !u!114 &11400134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a1051046868c4345a8395f01a603680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testLevelMap: {fileID: 0}
+  LevelMaps:
+  - {fileID: 6377364919975952290, guid: ddf247df3bdf3b14fa57abced7e5da8b, type: 3}
+  - {fileID: 528031533003121616, guid: 618597b46836ae14e842a099288e778a, type: 3}
+  - {fileID: 9051957214590350353, guid: f2b14198b86bf5248b0ce55e78268008, type: 3}
+  - {fileID: 5672932996909162751, guid: 404810e07b83db74ebc01e40e60607fb, type: 3}
+  - {fileID: 2544053338243567686, guid: 8f3c238e285d45e4cbdec206836b49a3, type: 3}
+  - {fileID: 74222444955482801, guid: 26078d8d87b0e074d9bc6f2535067411, type: 3}
+  - {fileID: 5743927343266987134, guid: b787797635728bb4b903513ee8bdbce0, type: 3}
+  - {fileID: 7706010898980538330, guid: 4f4b0312c1d01ec45ad5c806d12239a9, type: 3}
+  - {fileID: 3768352455963761794, guid: 406d1d4d775f5a64c922d1218096c14d, type: 3}
+  - {fileID: 661619338615643518, guid: 0eb7cd39403ef7845920c2fdab568ad3, type: 3}
+  - {fileID: 6843976468190792982, guid: d8078fef21ce4294597b456f9b005024, type: 3}
+  - {fileID: 6605851082929129939, guid: d9c733a3c8959434ebf457011bba3a11, type: 3}
+  - {fileID: 6374090519240575417, guid: 7ea7f024d7fb2a9409eaaebd84557aea, type: 3}
+  - {fileID: 2330801820518066617, guid: db5836171ea19c24cb5f4fb9be540f15, type: 3}
+  - {fileID: 6695416901200047600, guid: 0ba8bf7a544e038459415c4084c227b7, type: 3}
+  - {fileID: 5585159799936149510, guid: 21195f9772fcc484284f2b1f19f1a94a, type: 3}
+  - {fileID: 2197763637442317073, guid: 582e12c8d68a5014fa0bdac0960194de, type: 3}
+  - {fileID: 3072015928733124551, guid: f29f7856edc5c6d4c9c74c2a1591800b, type: 3}
+  - {fileID: 2120941513332366209, guid: 9ae7aed58e649cd4aac904b9fcf66fd9, type: 3}
+  - {fileID: 2805489212126767700, guid: bd31843e1d6766f4aa687b0dee02c2c6, type: 3}
+  - {fileID: 7575192151665494677, guid: 8a293539ca6677d44b94625c6523d137, type: 3}
+  - {fileID: 7590396192823119860, guid: c259751d7962e924f954a9ef90d7d7c2, type: 3}
+  - {fileID: 9176315642661046573, guid: 14738bdfb5171094f96084d4873b3672, type: 3}
+  - {fileID: 5651136029134406137, guid: 67b715fde5dad9543bd2dd6986f3c3db, type: 3}
+  - {fileID: 2192985860050548965, guid: f1e5cf26ef68242449492ce78e92bb48, type: 3}
+  - {fileID: 3374185926545257773, guid: b1263861227be824fb1991ed62c45a39, type: 3}
+  - {fileID: 7351249794989890910, guid: 72d87b0ebdaed204ba814e13297443e2, type: 3}
+  - {fileID: 7077743279984107451, guid: 75d96e86bc947724dabffd0b0e5be824, type: 3}
+  - {fileID: 200639193707424586, guid: 15124bedb90a8fe4c8ab397c1a7d8eb9, type: 3}
+  - {fileID: 4331346230741953698, guid: a8d6cdb8b565fa14683dc2e40a450da2, type: 3}
+--- !u!114 &11483550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c27426c23a9a64aa481cdb251e8976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beginSoundInMainMenu: {fileID: 8300000, guid: b6cde3bb201d0b2418b2b5879db231d6,
+    type: 3}
+  musicsMenu: {fileID: 0}
+  musicMenuVolume: 0.5
+  musicWorldChoose: {fileID: 0}
+  musicLevelChoose: {fileID: 0}
+  musicsGame: {fileID: 0}
+  musicsGameVolume: 1
+  musicFinishPanel: {fileID: 8300000, guid: d0791dbc094e70345b48107e60efb3d1, type: 3}
+  soundPurchased: {fileID: 8300000, guid: 15136a26ec172473c8795e3358d0f864, type: 3}
+  soundUpgrade: {fileID: 0}
+  soundNotEnoughCoin: {fileID: 0}
+  soundClick: {fileID: 8300000, guid: 7320e96c1fa355d429cd961aa0b30a73, type: 3}
+  soundGamefinish: {fileID: 8300000, guid: f6ff4589c1e3b9a40b9f2f7e745726c9, type: 3}
+  soundGameover: {fileID: 8300000, guid: c34edd0d0460a9345908507f262f6f5a, type: 3}
+  soundCheckpoint: {fileID: 0}
+  soundCheckpointVolume: 0.5
+  soundTimeLess: {fileID: 0}
+  soundTimeLessVolume: 0.5
+  soundTimeUp: {fileID: 0}
+  soundTimeUpVolume: 0.5
+--- !u!114 &7692734163795400350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e718bc665d86414b8e53711c74825ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FloatingText: {fileID: 1124642983650704, guid: 80738b837bd43824f96b24d6688de4d1,
+    type: 3}
+--- !u!114 &825782909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2cd8a86be7e7049a40271a214b7128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listPlayerImage:
+  - ID: 0
+    Normal: {fileID: 21300000, guid: 73c4aa943d720df49a18084179ebdc61, type: 3}
+    Cry: {fileID: 21300000, guid: 0666658e7c2b4b349a0bf07b61370c5f, type: 3}
+    Sad: {fileID: 21300102, guid: 34c64ab01d767e94c93e85f49542b069, type: 3}
+    Smile: {fileID: 21300000, guid: dc102ed8d23cf794e81d4a0d920891e3, type: 3}
+    Angry: {fileID: 21300000, guid: 26451d2b8db00d64e90b22b277b82658, type: 3}
