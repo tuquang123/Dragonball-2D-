@@ -264,9 +264,9 @@ public class GameManager : MonoBehaviour
         if (State == GameState.Dead)
             yield break;
 
-        if (State != GameState.Dead && State != GameState.Waiting && AdsManager.Instance)
+        if (State != GameState.Dead && State != GameState.Waiting)
         {
-            AdsManager.Instance.ShowNormalAd(GameManager.GameState.Dead);
+            //AdsManager.Instance.ShowNormalAd(GameManager.GameState.Dead);
         }
 
         if (!forceGameOver && canBeSave())

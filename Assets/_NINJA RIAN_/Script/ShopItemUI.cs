@@ -41,24 +41,7 @@ public class ShopItemUI : MonoBehaviour
          
             if (watchVideocontainer != null)
             {
-                watchVideocontainer.SetActive(AdsManager.Instance && AdsManager.Instance.isRewardedAdReady());
-
-                if (AdsManager.Instance && AdsManager.Instance.TimeWaitingNextWatch() > 0)
-                {
-                    watchVideocontainer.SetActive(false);
-                    rewardTimeCountDownTxt.text = 
-                    ((int)(AdsManager.Instance.TimeWaitingNextWatch()) / 60).ToString("0") + ":" + ((int)AdsManager.Instance.TimeWaitingNextWatch() % 60).ToString("00");
-                }
-                else
-                {
-                    if (rewardTimeCountDownTxt)
-                    {
-                        rewardTimeCountDownTxt.text = "";
-
-                        if (!AdsManager.Instance || AdsManager.Instance && !AdsManager.Instance.isRewardedAdReady())
-                            rewardTimeCountDownTxt.text = "No Ads";
-                    }
-                }
+                
             }
         }
         else
@@ -122,7 +105,7 @@ public class ShopItemUI : MonoBehaviour
 
     private void AdsManager_AdResult(bool isSuccess, int rewarded)
     {
-        AdsManager.AdResult -= AdsManager_AdResult;
+        //AdsManager.AdResult -= AdsManager_AdResult;
         if (isSuccess)
         {
             GlobalValue.SavedCoins += rewarded;

@@ -40,8 +40,7 @@ public class MainMenuHomeScene : MonoBehaviour {
     }
     
 	IEnumerator Start () {
-        if(AdsManager.Instance)
-        AdsManager.Instance.ShowAdmobBanner(true);
+        
 
         if (!GlobalValue.isSetDefaultValue)
         {

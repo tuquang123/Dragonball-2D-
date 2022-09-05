@@ -65,8 +65,7 @@ public class MainMenu_Level : MonoBehaviour
     public void LoadScene()
     {
         GlobalValue.levelPlaying = levelNumber;
-        if(AdsManager.Instance)
-        AdsManager.Instance.ShowAdmobBanner(false);
+        
         if (loadSceneManual)
         {
             MainMenuHomeScene.Instance.LoadScene(loadSceneManualName);

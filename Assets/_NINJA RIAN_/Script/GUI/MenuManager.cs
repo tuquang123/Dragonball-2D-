@@ -34,8 +34,7 @@ public class MenuManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        if(AdsManager.Instance)
-        AdsManager.Instance.ShowAdmobBanner(false);
+        
 
         Startmenu.SetActive(true);
         GUI.SetActive(false);
@@ -190,8 +189,7 @@ public class MenuManager : MonoBehaviour
         SoundManager.PlaySfx(SoundManager.Instance.soundClick);
         if (Time.timeScale == 0)
         {
-            if(AdsManager.Instance)
-            AdsManager.Instance.ShowAdmobBanner(false);
+            
             GamePause.SetActive(false);
             GUI.SetActive(true && !GameManager.Instance.hideGUI);
             Time.timeScale = 1;
@@ -199,8 +197,7 @@ public class MenuManager : MonoBehaviour
         }
         else
         {
-            if(AdsManager.Instance)
-            AdsManager.Instance.ShowAdmobBanner(true);
+            
             GamePause.SetActive(true);
             GUI.SetActive(false);
             Time.timeScale = 0;
@@ -229,8 +226,7 @@ public class MenuManager : MonoBehaviour
     {
         GUI.SetActive(false);
         yield return new WaitForSeconds(time);
-        if (AdsManager.Instance)
-            AdsManager.Instance.ShowNormalAd(GameManager.GameState.Finish);
+       
         yield return new WaitForSeconds(0.2f);
 
         if (LevelMapType.Instance.forceLoadScene)
@@ -241,7 +237,7 @@ public class MenuManager : MonoBehaviour
         }
         else
         {
-            AdsManager.Instance.ShowAdmobBanner(true);
+            
             GameFinish.SetActive(true);
             SoundManager.MusicVolume = 1;
             SoundManager.PlayMusic(SoundManager.Instance.musicFinishPanel, false);
@@ -257,7 +253,7 @@ public class MenuManager : MonoBehaviour
         //show ads
        
         Gameover.SetActive(true);
-        AdsManager.Instance.ShowAdmobBanner(true);
+        
     }
 
     public void ForceFinishLevel()

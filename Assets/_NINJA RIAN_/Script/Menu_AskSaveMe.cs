@@ -30,7 +30,7 @@ public class Menu_AskSaveMe : MonoBehaviour
             Time.timeScale = 0;
             btnSaveByCoin.interactable = GlobalValue.SavedCoins >= GameManager.Instance.continueCoinCost;
 #if UNITY_ANDROID || UNITY_IOS
-            btnWatchVideoAd.interactable = UnityAds.Instance && UnityAds.Instance.isRewardedAdReady();
+           
 #else
             btnWatchVideoAd.interactable = false;
             btnWatchVideoAd.gameObject.SetActive(false);
@@ -53,8 +53,7 @@ public class Menu_AskSaveMe : MonoBehaviour
 
             if (timerCountDown <= 0)
             {
-                if(AdsManager.Instance)
-                AdsManager.Instance.ShowAdmobBanner(true);
+               
                 GameManager.Instance.GameOver(true);
                 Time.timeScale = 1;
                 MenuManager.Instance.OpenSaveMe(false);
@@ -78,7 +77,7 @@ public class Menu_AskSaveMe : MonoBehaviour
         
 
         //reset to avoid play Unity video ad when finish game
-        AdsManager.Instance.ResetCounter(); 
+        
     }
 
     void Continue()

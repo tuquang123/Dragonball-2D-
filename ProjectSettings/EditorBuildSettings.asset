@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_NINJA RIAN_/Scene/Test -Enemy.unity
-    guid: 6b500a40d576f4c42ad0764a195a8cd3
+    path: Assets/Main.unity
+    guid: 18289a19c4f5fe04c80633b248776766
   m_configObjects: {}
