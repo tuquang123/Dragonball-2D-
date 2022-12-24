@@ -156,7 +156,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Main.unity:
+    Assets/_NINJA RIAN_/Scene/Test -Enemy.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -2260,5 +2260,5 @@ ScriptsOnlyBuild:
     className: PathedProjectileSpawner
   platform: 13
   scenePathNames:
-  - Assets/Main.unity
-  playerPath: C:/Users/OS/Desktop/gg2.apk
+  - Assets/_NINJA RIAN_/Scene/Test -Enemy.unity
+  playerPath: C:/Users/OS/Downloads/Njnja.apk

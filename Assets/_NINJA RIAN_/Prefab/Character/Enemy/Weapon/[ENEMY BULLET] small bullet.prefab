@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 11420768}
   - component: {fileID: 4807733331625315535}
   - component: {fileID: 1573160943964582211}
-  m_Layer: 13
+  m_Layer: 3
   m_Name: '[ENEMY BULLET] small bullet'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,6 +48,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -70,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1459822339
-  m_SortingLayer: -4
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300022, guid: d832b9ab0e30dc549a827a08b43ac26c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,7 +101,7 @@ MonoBehaviour:
   Damage: 30
   LayerCollision:
     serializedVersion: 2
-    m_Bits: 8960
+    m_Bits: 64
   radarRadius: 3
   DestroyEffect: {fileID: 113216, guid: 20400a4349ca29f41b9c336e87901ff8, type: 3}
   pointToGivePlayer: 5
@@ -144,8 +146,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.21, y: 0.2}
+    pivot: {x: 0.49183628, y: 0.08007465}
+    oldSize: {x: 1.08, y: 2.13}
     newSize: {x: 0.21, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
